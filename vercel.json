@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "functions": {
+    "api/mcp.js": {
+      "memory": 256
+    }
+  },
+  "routes": [
+    {
+      "src": "/mcp",
+      "dest": "/api/mcp"
+    },
+    {
+      "src": "/schema",
+      "dest": "/api/mcp"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index"
+    }
+  ]
+}
